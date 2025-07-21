@@ -80,7 +80,7 @@ ul {
 	background-color: #2e2f42;
 	color: #ffffff;
 	text-align: center;
-	padding: 188px 0;
+	padding: 120px 0;
 }
 
 .hero h1 {
@@ -177,8 +177,8 @@ ul {
 }
 
 .portfolio-list {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 	gap: 24px;
 }
 
@@ -201,10 +201,12 @@ ul {
 	background-color: #ffffff;
 	padding-bottom: 32px;
 	border-radius: 0 0 4px 4px;
-	box-shadow:
-		0 2px 1px rgba(46, 47, 66, 0.08),
-		0 1px 1px rgba(46, 47, 66, 0.16),
-		0 1px 6px rgba(46, 47, 66, 0.08);
+
+	min-width: 360px;
+}
+
+.lower {
+	border: 1px solid #e7e9fc;
 }
 
 .footer {
